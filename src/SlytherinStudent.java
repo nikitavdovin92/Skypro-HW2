@@ -77,10 +77,14 @@ public class SlytherinStudent extends HogwartsStudent {
 
     }
 
+    public void print() {
+        System.out.println(this);
+    }
+
     @Override
     public String toString() {
-        return String.format("%s; хитрость: %d; решительность: %d; амбициозность: %d; находчивость: %d; жажда власти: %d",
-                super.toString(), cunning, determination, ambition, ingenuity, thirstForPower);
+        return String.format("%s; хитрость: %d; решительность: %d; амбициозность: %d; находчивость: %d; жажда власти: %d"
+                ,cunning, determination, ambition, ingenuity, thirstForPower);
     }
 }
 

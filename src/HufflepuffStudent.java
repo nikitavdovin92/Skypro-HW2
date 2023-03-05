@@ -61,9 +61,12 @@ public class HufflepuffStudent extends HogwartsStudent {
 
     }
 
+    public void print() {
+        System.out.println(this);
+    }
+
     @Override
     public String toString() {
-        return String.format("%s; трудолюбие: %d; верность: %d; честность: %d",
-                super.toString(), diligence, loyalty, honesty);
+        return String.format("%s; трудолюбие: %d; верность: %d; честность: %d",diligence, loyalty, honesty);
     }
 }

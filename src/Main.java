@@ -4,7 +4,8 @@ public class Main {
 
     private static final Random RANDOM = new Random();
 
-    public static void main(String[] args) {
+
+    public static void main (String[] args) {
         GryffindorStudent harry = generateGryffindorStudent ("Гарри Поттер");
         GryffindorStudent ron = generateGryffindorStudent ("Рон Уизли");
         RavenclawStudent luna = generateRavenclawStudent ("Полумна Лавгуд");
