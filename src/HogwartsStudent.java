@@ -1,4 +1,4 @@
-public class HogwartsStudent {
+public abstract class   HogwartsStudent {
     private String name;
     private int magic;
     private int transgression;
@@ -51,6 +51,16 @@ public class HogwartsStudent {
 
         }
 
+    }
+
+    public void print() {
+        System.out.println(this);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Студент %s; сила магии: %d; сила трансгрессии: %d",
+                super.toString(), name, magic, transgression);
     }
 
 
