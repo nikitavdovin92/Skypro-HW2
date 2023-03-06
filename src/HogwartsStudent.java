@@ -41,13 +41,16 @@ public abstract class HogwartsStudent {
         int ability1 = ability();
         int ability2 = hogwartsStudent.ability();
         if (ability1 > ability2) {
-            System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n", hogwartsStudent.getName(), getName(),  ability1, ability2);
+            System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n",
+                    hogwartsStudent.getName(), getName(),  ability1, ability2);
 
         } else if (ability2 > ability1) {
-            System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n", hogwartsStudent.getName(), getName(), ability1, ability2 );
+            System.out.printf("Студент %s лучше, чем студент %s: %d VS %d%n",
+                    hogwartsStudent.getName(), getName(), ability1, ability2 );
 
         } else {
-            System.out.printf("Студент %s такой же, как студент %s: %d VS %d%n", hogwartsStudent.getName(), getName(), ability1, ability2);
+            System.out.printf("Студент %s такой же, как студент %s: %d VS %d%n",
+                    hogwartsStudent.getName(), getName(), ability1, ability2);
 
         }
     }
@@ -58,7 +61,7 @@ public abstract class HogwartsStudent {
 
     @Override
     public String toString() {
-        return String.format("Студент %s; сила магии: %d; сила трансгрессии: %d",
+        return String.format("Студент: " + name + "- сила магии: " + magic + "; сила трансгрессии: " + transgression,
                 super.toString(),
                 name,
                 magic,

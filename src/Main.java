@@ -18,12 +18,23 @@ public class Main {
         draco.print();
         cedric.print();
 
-        harry.compareHogwarts(draco);
-        harry.compareHogwarts(ron);
+        ron.compareHogwarts(luna);
+       draco.compareHogwarts(cedric);
     }
 
     private static GriffindorStudent generateGriffindorStudent (String name) {
         return new GriffindorStudent(name,
+                RANDOM.nextInt(100),
+                RANDOM.nextInt(100),
+                RANDOM.nextInt(100),
+                RANDOM.nextInt(100),
+                RANDOM.nextInt(100)
+        );
+    }
+
+    private static RavenclawStudent generateRavenclawStudent(String name) {
+        return new RavenclawStudent(name,
+                RANDOM.nextInt(100),
                 RANDOM.nextInt(100),
                 RANDOM.nextInt(100),
                 RANDOM.nextInt(100),
@@ -44,17 +55,6 @@ public class Main {
     private static SlytherinStudent generateSlytherinStudent(String name) {
         return new SlytherinStudent(name,
                 RANDOM.nextInt(100),
-                RANDOM.nextInt(100),
-                RANDOM.nextInt(100),
-                RANDOM.nextInt(100),
-                RANDOM.nextInt(100),
-                RANDOM.nextInt(100),
-                RANDOM.nextInt(100)
-        );
-    }
-
-    private static RavenclawStudent generateRavenclawStudent(String name) {
-        return new RavenclawStudent(name,
                 RANDOM.nextInt(100),
                 RANDOM.nextInt(100),
                 RANDOM.nextInt(100),
