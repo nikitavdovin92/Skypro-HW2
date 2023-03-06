@@ -1,3 +1,4 @@
+
 public class RavenclawStudent extends HogwartsStudent {
     private int cleverness;
     private int wisdom;

@@ -57,6 +57,7 @@ public class GriffindorStudent extends HogwartsStudent {
     }
     @Override
     public String toString() {
-        return String.format("%s; благородство: %d; честь: %d; храбрость: %d", super.toString(), nobility, honor, bravery);
+        return String.format("%s; благородство: %d; честь: %d; храбрость: %d",
+                super.toString(), nobility, honor, bravery);
     }
 }
